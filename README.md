@@ -12,9 +12,11 @@ This app won't just help you to assess if your server supports those compliance 
 ## Build instructions
 
 ```
-cd caas-annotations
-mvn clean install
-cd ../caas-app
 mvn package
 ```
 (needs Java 8)
+
+## Run
+```
+java -jar caas-app/target/caas-app.jar
+```

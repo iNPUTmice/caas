@@ -45,7 +45,7 @@ var drawGraph = function (data, onPointClick) {
     };
 
     if (data == null || data.length < 2) {
-        d3.select("#chart_container").html("<h2>We donot have enough data to show historical view</h2>");
+        d3.select("#chart_container").html("<h2>We do not have enough data to show historical view</h2>");
     }
     var times = [];
     for (var i in data) {

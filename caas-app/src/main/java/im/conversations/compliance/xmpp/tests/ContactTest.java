@@ -13,11 +13,22 @@ import java.util.List;
         short_name = "xep0157",
         full_name = "XEP-0157: Contact Addresses for XMPP Services",
         url = "https://xmpp.org/extensions/xep-0163.html",
-        description = "Checks if the server has a contact for reporting abuse.",
+        description = "Checks if the server provides contact addresses.",
         informational = true
 )
-public class AbuseContactTest extends AbstractTest {
-    public AbuseContactTest(XmppClient client) {
+public class ContactTest extends AbstractTest {
+
+    // Registered fields for server information scoped by the "http://jabber.org/network/serverinfo" FORM_TYPE.
+    public static String[] FIELDS = {
+            "abuse-addresses",
+            "admin-addresses",
+            "feedback-addresses",
+            "sales-addresses",
+            "security-addresses",
+            "support-addresses"
+    };
+
+    public ContactTest( XmppClient client) {
         super(client);
     }
 
@@ -28,9 +39,11 @@ public class AbuseContactTest extends AbstractTest {
         try {
             List<DataForm> extensions = serviceDiscoveryManager.discoverInformation(target).getResult().getExtensions();
             for (DataForm extension : extensions) {
-                final DataForm.Field addr = extension.findField("abuse-addresses");
-                if (addr != null && addr.getValues().size() > 0) {
-                    return true;
+                for (String field : FIELDS) {
+                    final DataForm.Field addr = extension.findField( field );
+                    if (addr != null && addr.getValues().size() > 0) {
+                        return true;
+                    }
                 }
             }
             return false;

@@ -1,0 +1,122 @@
+{
+  "softwareName": "openfire",
+  "testsHelp": [
+    {
+      "name": "xep0163",
+      "possible": true,
+      "since": "3.4.0"
+    },
+    {
+      "name": "xep0115",
+      "possible": true,
+      "since": "4.3.0"
+    },
+    {
+      "name": "xep0045",
+      "possible": true,
+      "instructions": "Configurable in the admin console, on the pages Group Chat."
+    },
+    {
+      "name": "xep0160",
+      "possible": true,
+      "instructions": "Configurable in the admin console, on the page Server > Server Settings > Offline Messages."
+    },
+    {
+      "name": "xep0077",
+      "possible": true,
+      "instructions": "Configurable in the admin console, on the page Server > Server Settings > Registration & Login."
+    },
+    {
+      "name": "xep0157",
+      "possible": true,
+      "since": "4.3.0",
+      "instructions": "The non-empty email address for any admin user is exposed as an 'admin' contact."
+    },
+    {
+      "name": "roster_versioning",
+      "possible": true,
+      "since": "4.2.0",
+      "instructions": "Can be enabled/disabled by setting a boolean value in a property named 'xmpp.client.roster.versioning.active'."
+    },
+    {
+      "name": "xep0191",
+      "possible": true,
+      "since": "4.3.0"
+    },
+    {
+      "name": "xep0198",
+      "possible": true,
+      "since": "4.0.0",
+      "instructions": "Can be enabled/disabled by setting a boolean value in a property named 'stream.management.active'."
+    },
+    {
+      "name": "xep0280",
+      "possible": true,
+      "since": "3.9.2"
+    },
+    {
+      "name": "xep0352",
+      "possible": false,
+      "instructions": "Currently unsupported. Development tracked in https://issues.igniterealtime.org/browse/OF-1574"
+    },
+    {
+      "name": "xep0065",
+      "possible": true,
+      "since": "3.0.0",
+      "instructions": "Configurable in the admin console, on the page Server > Server Settings > File Transfer Settings."
+    },
+    {
+      "name": "xep0313",
+      "possible": true,
+      "modulesRequired": [
+        {
+          "name": "monitoring",
+          "type": "core",
+          "link": "https://www.igniterealtime.org/projects/openfire/plugins.jsp"
+        }
+      ],
+      "instructions": "Although MAM is provided by earlier versions of the plugin, proper advertisement of the feature (required for this check to be successful) was added in version 1.7.0."
+    },
+    {
+      "name": "xep0363",
+      "possible": true,
+      "modulesRequired": [
+        {
+          "name": "httpFileUpload",
+          "type": "core",
+          "link": "https://www.igniterealtime.org/projects/openfire/plugins.jsp"
+        }
+      ]
+    },
+    {
+      "name": "xep0357",
+      "possible": false,
+      "instructions": "Currently unsupported. Development tracked in https://issues.igniterealtime.org/browse/OF-1577"
+    },
+    {
+      "name": "xep0313muc",
+      "possible": true,
+      "modulesRequired": [
+        {
+          "name": "monitoring",
+          "type": "core",
+          "link": "https://www.igniterealtime.org/projects/openfire/plugins.jsp"
+        }
+      ]
+    },
+    {
+      "name": "xep0384",
+      "possible": true,
+      "since": "4.3.0"
+    },
+    {
+      "name": "xep0368",
+      "possible": true,
+      "instructions": "TODO: Write instructions"
+    },
+    {
+      "name": "xep0398",
+      "possible": false
+    }
+  ]
+}

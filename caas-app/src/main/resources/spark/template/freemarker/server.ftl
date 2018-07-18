@@ -86,7 +86,11 @@
 
                    <#if help.modulesRequired??>
                    <li>
-                       Add the following modules to your configuration file:
+                       <#if softwareName == "Openfire" >
+                          Install the following plugin:
+                       <#else>
+                          Add the following modules to your configuration file:
+                       </#if>
                        <div class="modules">
                        <#list help.getModulesRequired() as module>
                            <div class="module">

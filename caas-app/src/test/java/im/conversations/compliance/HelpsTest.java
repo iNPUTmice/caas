@@ -30,6 +30,12 @@ public class HelpsTest {
         checkHelpFile("Prosody");
     }
 
+    @Test
+    public void validHelpExistsForOpenfire() {
+        checkHelpFile("openfire");
+        checkHelpFile("Openfire");
+    }
+
     void checkHelpFile(String server) {
         ServerHelp help = Help.getInstance().getHelpFor(server).get();
         List<String> testsForWhichHelpAvailable = help.getTestsHelp()

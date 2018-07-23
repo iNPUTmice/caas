@@ -112,7 +112,7 @@
     {
       "name": "xep0368",
       "possible": true,
-      "instructions": "TODO: Write instructions"
+      "since": "4.3.0"
     },
     {
       "name": "xep0398",

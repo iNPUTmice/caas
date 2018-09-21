@@ -1,7 +1,4 @@
-* Make sure your server is v0.9+
-* Install the community module [mod\_server\_contact\_info](https://modules.prosody.im/mod_server_contact_info.html).
-* Follow the instructions and add a valid abuse-address.
+* Make sure your server is using prosody version v0.10+
+* Follow the instructions for [mod_server_contact_info](https://prosody.im/doc/modules/mod_server_contact_info) to add a `contact_info = { ... }` block to your prosody configuration.
 
-Note: This module does not come with default prosody installation.
-However, it can be set up by adding a community module.
-To learn about how to install a community module, go to [installing modules documentation](https://prosody.im/doc/installing_modules)
+Note: This module was migrated from a community module to a core module in 0.10

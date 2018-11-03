@@ -11,9 +11,9 @@ import java.util.List;
 
 @ComplianceTest(
         short_name = "abuse-contact",
-        full_name = "Contact Addresses for reporting abuse",
-        url = "https://xmpp.org/extensions/xep-0163.html",
-        description = "Checks if the server has a contact for reporting spam,abuse.",
+        full_name = "XEP-0157: Contact Addresses for XMPP Services",
+        url = "https://xmpp.org/extensions/xep-0157.html",
+        description = "Checks if the server has a contact for reporting spam, abuse.",
         informational = true
 )
 public class AbuseContactTest extends AbstractTest {

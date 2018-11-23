@@ -1,5 +1,5 @@
 * Make sure your server has v0.10+
-* Add the community module [mod\_mam\_muc](https://modules.prosody.im/mod_mam_muc).
+* Add the community module [mod\_mam\_muc](https://modules.prosody.im/mod_mam_muc) if you have <v0.11 or mod\_muc\_mam for =>v0.11.
 * As shown in the documentation, add a modules\_enabled with this module just after
 the MUC `Component` line in your configuration
 

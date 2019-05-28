@@ -32,7 +32,7 @@ public class CommandLineLauncher {
         final List<String> args = cmd.getArgList();
         String password;
         if (args.size() > 2 || args.size() < 1) {
-            System.err.println("java -jar ComplianceTester.jar username@domain.tld [password]");
+            System.err.println("java -jar caas-app.jar username@domain.tld [password]");
             System.exit(1);
             return;
         }

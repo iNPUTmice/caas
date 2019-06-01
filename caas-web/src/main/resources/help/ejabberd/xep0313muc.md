@@ -4,11 +4,11 @@
 ```
 modules:
     ...
-     mod_mam:
+    mod_mam:
         default: always
     mod_muc:
-    ...
-    default_room_options:
-        mam: true
+        ...
+        default_room_options:
+            mam: true
     ...
 ```

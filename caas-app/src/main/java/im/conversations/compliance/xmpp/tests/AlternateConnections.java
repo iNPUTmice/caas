@@ -101,6 +101,11 @@ public class AlternateConnections extends AbstractTest {
             if (ws) {
                 builder.header("Connection", "Upgrade");
                 builder.header("Upgrade", "websocket");
+                builder.header("Sec-WebSocket-Protocol", "xmpp");
+                builder.header("Sec-WebSocket-Version", "13");
+                final byte[] uuidBytes = UUID.randomUUID().toString().getBytes();
+                final String securityKey = Base64.getEncoder().encodeToString(uuidBytes);
+                builder.header("Sec-WebSocket-Key", securityKey);
                 builder.get();
             } else {
                 builder.method("OPTIONS", null);

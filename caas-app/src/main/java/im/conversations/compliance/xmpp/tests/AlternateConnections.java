@@ -105,6 +105,7 @@ public class AlternateConnections extends AbstractTest {
                 builder.get();
             } else {
                 builder.method("OPTIONS", null);
+                builder.header("Origin", "null");
             }
             final Response response = okHttpClient.newCall(builder.build()).execute();
             final Map<String, List<String>> headers = response.headers().toMultimap();

@@ -26,7 +26,7 @@ public class Controller {
     private static final Gson gson = JsonReader.gson;
 
     public static TemplateViewRoute getRoot = (request, response) -> {
-        List<Server> servers = DBOperations.getServers(false);
+        List<Server> servers = DBOperations.getServers(true);
         HashMap<String, Object> model = new HashMap<>();
         model.put("servers", gson.toJson(servers.stream().map(Server::getDomain).collect(Collectors.toList())));
         List<String> compliantServerNames = DBOperations.getCompliantServers();
